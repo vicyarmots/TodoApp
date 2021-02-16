@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(./src/img/todo-background.jpg);
+	background-size: cover;
+	height: 100vh;
+	color: ghostwhite;
+}
+
+header {
+	font-style: 1.5rem;
+}
+
+header,
+form {
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input,
+form button {
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: none;
+	background: white;
+	outline: none;
+}
+
+form button {
+	color: white;
+	background: rgb(59, 65, 90);
+	cursor: pointer;
+	transition: all 0.3 ease;
+}
+form button:hover {
+	background: rgb(116, 119, 150);
+}
+
+.content {
+	min-height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list {
+	min-width: 30%;
+	list-style: none;
+}
+
+.todo {
+	margin: 0.5rem;
+	background: white;
+	color: black;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 1s ease;
+}
+
+.todo-item {
+	flex: 1;
+	padding-left: 1rem;
+}
+
+.delete {
+	background: rgb(59, 65, 90);
+	color: white;
+	border: none;
+	padding: 1rem;
+	outline: none;
+}
+
+.check {
+	background: rgb(216, 194, 121);
+	color: white;
+	border: none;
+	padding: 1rem;
+	outline: none;
+}
+
+.check:hover {
+	background: rgb(233, 215, 157);
+	color: gray;
+}
+
+.delete:hover {
+	background: rgb(116, 119, 150);
+	color: white;
+}
+
+.complited {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+.fall {
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+
+select {
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.select {
+	padding: 0.5rem;
+	margin: 1rem;
+	overflow: hidden;
+	font-size: 1rem;
+}
+
+.select:hover {
+	opacity: 0.9;
+}
