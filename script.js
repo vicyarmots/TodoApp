@@ -55,21 +55,21 @@ function filterTodo(e) {
 	});
 }
 
-// switch (e.target.value) {
-// 	case 'all':
-// 		break;
-// 	case 'complited':
-// 		if (item.classList.contains('complited')) {
-// 			item.style.display = 'flex	';
-// 		} else {
-// 			item.style.display = 'none';
-// 		}
-// 		break;
-// 	case 'uncomplited':
-// 		if (!item.classList.contains('complited')) {
-// 			item.style.display = 'flex	';
-// 		} else {
-// 			item.style.display = 'none';
-// 		}
-// 		break;
-// }
+switch (e.target.value) {
+	case 'all':
+		break;
+	case 'complited':
+		if (item.classList.contains('complited')) {
+			item.style.display = 'flex	';
+		} else {
+			item.style.display = 'none';
+		}
+		break;
+	case 'uncomplited':
+		if (!item.classList.contains('complited')) {
+			item.style.display = 'flex	';
+		} else {
+			item.style.display = 'none';
+		}
+		break;
+}
